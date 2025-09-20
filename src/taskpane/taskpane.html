@@ -17,11 +17,22 @@
     <h1 class="ms-font-su">Excel Fighter</h1>
   </header>
   <main id="app-body" class="ms-welcome__main">
-    <p class="ms-font-l">选择一个矩形区域作为游戏屏幕，然后点击 <b>Start</b></p>
+    <h2 class="ms-font-xl"> Excel 飞机大战 </h2>
+    <p class="ms-font-l">选择一个矩形区域作为游戏屏幕，然后点击 <b>Run</b> 开始。</p>
+    
     <div role="button" id="run" class="ms-welcome__action ms-Button ms-Button--hero ms-font-xl">
-      <span class="ms-Button-label">Start</span>
+        <span class="ms-Button-label">Run</span>
     </div>
-    <p>用方向键移动飞机 ✈</p>
+
+    <div role="button" id="pause" class="ms-welcome__action ms-Button ms-Button--hero ms-font-xl" style="margin-top: 10px;">
+        <span class="ms-Button-label">Pause</span>
+    </div>
+
+    <div role="button" id="restart" class="ms-welcome__action ms-Button ms-Button--hero ms-font-xl" style="margin-top: 10px;">
+        <span class="ms-Button-label">Restart</span>
+    </div>
+
+    <p><label id="status-label"></label></p>
   </main>
 
   <script type="module" src="taskpane.js"></script>
