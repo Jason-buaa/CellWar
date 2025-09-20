@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Excel Fighter</title>
+
+  <!-- Office JavaScript API -->
+  <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+
+  <link rel="stylesheet" href="https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/office-ui-fabric-core/11.1.0/css/fabric.min.css"/>
+  <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="ms-font-m ms-welcome ms-Fabric">
+  <header class="ms-welcome__header ms-bgColor-neutralLighter">
+    <h1 class="ms-font-su">Excel Fighter</h1>
+  </header>
+  <main id="app-body" class="ms-welcome__main">
+    <p class="ms-font-l">选择一个矩形区域作为游戏屏幕，然后点击 <b>Start</b></p>
+    <div role="button" id="run" class="ms-welcome__action ms-Button ms-Button--hero ms-font-xl">
+      <span class="ms-Button-label">Start</span>
+    </div>
+    <p>用方向键移动飞机 ✈</p>
+  </main>
+
+  <script type="module" src="taskpane.js"></script>
+</body>
+</html>
